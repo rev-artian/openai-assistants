@@ -14,13 +14,9 @@ git clone https://github.com/openai/openai-assistants-quickstart.git
 cd openai-assistants-quickstart
 ```
 
-### 2. Set your [OpenAI API key](https://platform.openai.com/api-keys)
+### 2. Set your [OpenAI API key](https://platform.openai.com/api-keys) and OpenAI Assistant ID
 
-```shell
-export OPENAI_API_KEY="sk_..."
-```
-
-(or in `.env.example` and rename it to `.env`).
+Add the keys to `.env.example` and rename it to `.env`.
 
 ### 3. Install dependencies
 
@@ -67,7 +63,3 @@ The main logic for chat will be found in the `Chat` component in `app/components
 - `api/assistants/threads/[threadId]/messages` - `POST`: send message to assistant
 - `api/assistants/threads/[threadId]/actions` - `POST`: inform assistant of the result of a function it decided to call
 - `api/assistants/files` - `GET`/`POST`/`DELETE`: fetch, upload, and delete assistant files for file search
-
-## Feedback
-
-Let us know if you have any thoughts, questions, or feedback in [this form](https://docs.google.com/forms/d/e/1FAIpQLScn_RSBryMXCZjCyWV4_ebctksVvQYWkrq90iN21l1HLv3kPg/viewform?usp=sf_link)!
